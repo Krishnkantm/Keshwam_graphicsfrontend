@@ -1,0 +1,81 @@
+:root{
+  --pl-bg: #ffffff;
+  --pl-border: rgba(11,36,71,0.06);
+  --pl-ink: #0b2447;
+  --pl-muted: #6b7280;
+  --pl-gold-1: #d4af37;
+  --pl-gold-2: #f5c06a;
+}
+
+.pl-root{
+  margin-top:20px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+  /* soft cream background for the whole price list area */
+  background: #fffaf0;
+  padding:16px;
+  border-radius:12px;
+  border:1px solid rgba(212,175,55,0.06);
+}
+
+.pl-header{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+.pl-title{
+  margin:0;
+  font-size:20px;
+  font-weight:700;
+  color:var(--pl-ink);
+}
+
+.pl-sub{ margin:0; color:var(--pl-muted); font-size:13px; }
+
+.pl-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:12px;
+}
+
+.pl-card{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 16px;
+  border-radius:12px;
+  background:linear-gradient(180deg,#fff,#fbfbfd);
+  border:1px solid var(--pl-border);
+  box-shadow:0 6px 18px rgba(11,36,71,0.06);
+  transition:transform .16s ease, box-shadow .16s ease;
+}
+.pl-card:hover{ transform:translateY(-6px); box-shadow:0 12px 30px rgba(11,36,71,0.12); }
+
+.pl-left{ display:flex; flex-direction:column; gap:4px; min-width:0; }
+.pl-name{ font-weight:600; color:var(--pl-ink); font-size:15px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.pl-desc{ color:var(--pl-muted); font-size:13px; max-width:40ch; overflow:hidden; text-overflow:ellipsis; }
+
+.pl-price{
+  background:linear-gradient(90deg,var(--pl-gold-1),var(--pl-gold-2));
+  color:#071125;
+  font-weight:800;
+  font-size:14px;
+  padding:8px 12px;
+  border-radius:999px;
+  min-width:78px;
+  text-align:center;;
+}
+
+.pl-empty{
+  padding:180px;
+  text-align:center;
+  border-radius:10px;
+  background:#fffaf0;
+  border:1px solid rgba(212,175,55,0.12);
+  color:var(--pl-muted);
+}
+
+@media(min-width:900px){ .pl-grid{ grid-template-columns: repeat(2, 1fr); } }
+@media(max-width:420px){ .pl-card{ padding:10px; } .pl-title{ font-size:18px; } }

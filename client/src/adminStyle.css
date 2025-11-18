@@ -1,0 +1,98 @@
+/* ---------- ADMIN LOGIN PAGE ---------- */
+.main-container2 {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--white), var(--gold-light));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.center-card {
+  background: var(--white);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 40px 50px;
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.center-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.2);
+}
+
+.center-card h2 {
+  color: var(--black);
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.center-card h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--gold);
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+/* Input styling */
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid var(--gold);
+  outline: none;
+  font-size: 15px;
+  background: #fffdf7;
+  color: var(--black);
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+/* Button styling */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  border: none;
+  border-radius: 8px;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .center-card {
+    padding: 30px 25px;
+  }
+
+  .center-card h2 {
+    font-size: 22px;
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+}
