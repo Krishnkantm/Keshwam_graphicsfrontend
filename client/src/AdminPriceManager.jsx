@@ -4,6 +4,7 @@ import API from './apiBase.jsx'; // ensure axios.defaults.baseURL is set
 // const API = process.env.REACT_APP_API || `${window.location.protocol}//${window.location.hostname}:5000`;
 
 import "./AdminPriceManager.css";
+
 export default function AdminPriceManager() {
   const [prices, setPrices] = useState([]);
   const [newItem, setNewItem] = useState({ name: "", price: "" });
@@ -15,12 +16,12 @@ export default function AdminPriceManager() {
   }, []);
 
   const loadData = async () => {
-    const res = await axios.get(`${API}/api/prices`);
+    const res = await axios.get('/api/prices');
     setPrices(res.data);
   };
 
   const updatePrices = async (updated) => {
-    await axios.put(`${API}/api/admin/prices`, updated, {
+    await axios.put('/api/admin/prices', updated, {
       headers: { Authorization: `Bearer ${token}` },
     });
     setPrices(updated);

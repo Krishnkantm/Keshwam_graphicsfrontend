@@ -9,7 +9,7 @@ export default function PriceList() {
 
   useEffect(()=>{
     let mounted = true;
-    axios.get(`${API}/api/prices`)
+    axios.get('/api/prices')
       .then(r => { if (mounted) setPrices(r.data || []); })
       .catch(() => { if (mounted) setPrices([]); })
       .finally(() => { if (mounted) setLoading(false); });

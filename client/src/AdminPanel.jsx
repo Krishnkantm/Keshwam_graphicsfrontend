@@ -44,7 +44,7 @@ export default function AdminPanel(){
     const token = localStorage.getItem('kg_token');
 
     try {
-      await axios.post(`${API}/api/admin/upload`, form, {
+      await axios.post('/api/admin/upload', form, {
         headers: { Authorization: `Bearer ${token}` }
       });
 
@@ -65,7 +65,7 @@ export default function AdminPanel(){
     const token = localStorage.getItem("kg_token");
 
     try {
-      await axios.delete(`${API}/delete/${id}`, {
+      await axios.delete(`/delete/${id}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       alert("✅ Deleted Successfully");

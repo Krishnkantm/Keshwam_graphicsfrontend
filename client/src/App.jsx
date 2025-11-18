@@ -26,7 +26,7 @@ export default function App() {
         <nav className="nav-links">
           <Link to="/" className="nav-item">Home</Link>
           <Link to="/api/prices" className="nav-item">Prices</Link>
-          {/* <Link to="/admin" className="nav-item">Admin</Link> */}
+          <Link to="/admin" className="nav-item">Admin</Link>
         </nav>
       </header>
       <main className="main-container">
@@ -47,7 +47,7 @@ export default function App() {
           <Route path="/api/prices" element={<PriceList />} />
 
           {/* Admin Login */}
-          <Route path="/admin440" element={<AdminLogin />} />
+          <Route path="/admin" element={<AdminLogin />} />
 
           {/* Admin Panel (only accessible after login) */}
           <Route path="/admin/panel" element={

@@ -7,7 +7,7 @@ export default function PriceEditor(){
   const [prices, setPrices] = useState([]);
 
   useEffect(()=>{
-    axios.get(`${API}/api/prices`).then(r=>setPrices(r.data));
+    axios.get('/api/prices').then(r=>setPrices(r.data));
   },[]);
 
   const save = () => {

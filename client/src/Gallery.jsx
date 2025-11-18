@@ -7,7 +7,7 @@ export default function Gallery(){
   const [items, setItems] = useState([]);
   const [filter, setFilter] = useState('all');
 
-  useEffect(()=>{ axios.get(`${API}/api/media`).then(r=>setItems(r.data)); },[]);
+  useEffect(()=>{ axios.get('/api/media').then(r=>setItems(r.data)); },[]);
 
   const displayed = items.filter(i => filter==='all'? true : i.category===filter);
 

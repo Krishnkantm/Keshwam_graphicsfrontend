@@ -22,7 +22,7 @@ export default function AdminUpload() {
     formData.append("price", price);
 
     try {
-      await axios.post(`${API}/api/admin/upload`, formData, {
+      await axios.post('/api/admin/upload', formData, {
          headers: { 
            "Content-Type": "multipart/form-data",
            Authorization: "Bearer " + localStorage.getItem("token") // ✅ ADD THIS
