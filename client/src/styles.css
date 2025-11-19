@@ -396,10 +396,48 @@ select:focus {
   font-size: 13px;
   color: #777;
 }
-
-/* .main-container .upload-panel{
+/* ---------- ZOOM PREVIEW POPUP ---------- */
+.zoom-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: zoom-out;
+  z-index: 99999;
+  padding: 20px;
+  backdrop-filter: blur(3px);
+}
 
-} */
+.zoom-overlay img,
+.zoom-overlay video {
+  max-width: 92%;
+  max-height: 92%;
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.4),
+              0 0 45px rgba(212, 175, 55, 0.25);
+  animation: zoomIn 0.25s ease-out;
+}
+
+/* Zoom opening animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .zoom-overlay img,
+  .zoom-overlay video {
+    max-width: 98%;
+    max-height: 80%;
+  }
+}
+
