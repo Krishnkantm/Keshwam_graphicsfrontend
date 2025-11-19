@@ -15,7 +15,7 @@ export default function Gallery(){
     <div>
       <section className="hero">
         <div className="hero-text">
-          <h1 className="rainbow-text">Keshvam Graphic</h1>
+          <h1 className="rainbow-text">Keshwam Graphic</h1>
 
           <p>Creative Prints, Unique Expressions</p>
         </div>
