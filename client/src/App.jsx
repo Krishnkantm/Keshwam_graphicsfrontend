@@ -87,16 +87,25 @@ export default function App() {
     </div>
 
     <div className="footer-section social">
-      <h3>Follow Us</h3>
-      <div className="social-icons">
-        <a href="https://api.whatsapp.com/message/NQJOHGLTC4DVP1?autoload=1&app_absent=0">Whatsapp,<i className="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/keshwamgraphics/">Instagram (keshwamgraphics),<i className="fab fa-instagram"></i></a>
-        <a href="https://www.instagram.com/keshwam_edits/">Instagram (keshwam_edits),<i className="fab fa-instagram"></i></a>        
-        <a href="https://www.instagram.com/ujjwal_modi_/">Instagram (Ujjwal Modi),<i className="fab fa-instagram"></i></a>
-        <a href="https://www.instagram.com/_nvn_modi_/">Instagram  (Navin Modi).<i className="fab fa-instagram"></i></a>
-        {/* <a href="#"><i className="fab fa-youtube"></i></a> */}
-      </div>
-    </div>
+  <h3>Follow Us</h3>
+  <div className="social-icons">
+    <a href="https://api.whatsapp.com/message/NQJOHGLTC4DVP1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer">
+      <i className="fab fa-whatsapp"></i> Whatsapp
+    </a>
+    <a href="https://www.instagram.com/keshwamgraphics/" target="_blank" rel="noopener noreferrer">
+      <i className="fab fa-instagram"></i> Instagram (keshwamgraphics)
+    </a>
+    <a href="https://www.instagram.com/keshwam_edits/" target="_blank" rel="noopener noreferrer">
+      <i className="fab fa-instagram"></i> Instagram (keshwam_edits)
+    </a>
+    <a href="https://www.instagram.com/ujjwal_modi_/" target="_blank" rel="noopener noreferrer">
+      <i className="fab fa-instagram"></i> Instagram (Ujjwal Modi)
+    </a>
+    <a href="https://www.instagram.com/_nvn_modi_/" target="_blank" rel="noopener noreferrer">
+      <i className="fab fa-instagram"></i> Instagram (Navin Modi)
+    </a>
+  </div>
+</div>
   </div>
   <div className="footer-bottom">
   <p>
