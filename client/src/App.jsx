@@ -70,13 +70,13 @@ export default function App() {
       <p>Keshwam Graphic — your destination for creative prints and unique expressions. We specialize in Patrika, Invitations, Number Plates, Photo Frames & more.</p>
     </div>
 
-    <div className="footer-section links">
+    {/* <div className="footer-section links">
       <h3>Quick Links</h3>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/api/prices">Price</a></li>
       </ul>
-    </div>
+    </div> */}
 
     <div className="footer-section contact">
       <h3>Contact Us</h3>
