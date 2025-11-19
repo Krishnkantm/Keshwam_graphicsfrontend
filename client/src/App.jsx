@@ -16,7 +16,7 @@ export default function App() {
              <div className="brand">
   <div className="logo-box luxe">KG</div>
   <div>
-    <div className="shop-name">Keshvam Graphic</div>
+    <div className="shop-name">Keshwam Graphic</div>
     <div className="tagline">Creative Prints, Unique Expressions</div>
   </div>
 </div>
@@ -67,7 +67,7 @@ export default function App() {
   <div className="footer-container">
     <div className="footer-section about">
       <h2 className="footer-logo">KG</h2>
-      <p>Keshvam Graphic — your destination for creative prints and unique expressions. We specialize in Patrika, Invitations, Number Plates, Photo Frames & more.</p>
+      <p>Keshwam Graphic — your destination for creative prints and unique expressions. We specialize in Patrika, Invitations, Number Plates, Photo Frames & more.</p>
     </div>
 
     <div className="footer-section links">
@@ -100,7 +100,7 @@ export default function App() {
   </div>
   <div className="footer-bottom">
   <p>
-    © {new Date().getFullYear()} Keshvam Graphic | Designed with 💛 in India <br />
+    © {new Date().getFullYear()} Keshwam Graphic | Designed with 💛 in India <br />
     <span className="dev-credit">Developed by <strong>Krishnkant Modi 💻</strong></span>
   </p>
 </div>
