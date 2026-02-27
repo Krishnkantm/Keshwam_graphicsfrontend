@@ -457,12 +457,41 @@ select:focus {
   }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .zoom-overlay img,
-  .zoom-overlay video {
-    max-width: 98%;
-    max-height: 80%;
-  }
+/* Pagination container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* buttons ke beech space */
+  margin-top: 20px;
+  font-family: sans-serif;
 }
 
+/* Buttons style */
+.pagination button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+/* Button hover */
+.pagination button:hover:not(:disabled) {
+  background-color: #f0f0f0;
+  border-color: #999;
+}
+
+/* Disabled button */
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Page info text */
+.pagination span {
+  font-weight: bold;
+  color: #555;
+}
