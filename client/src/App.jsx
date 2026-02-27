@@ -89,7 +89,7 @@ export default function App() {
     <div className="footer-section social">
   <h3>Follow Us</h3>
   <div className="social-icons">
-    <a href="https://api.whatsapp.com/message/NQJOHGLTC4DVP1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer">
+    <a href="https://wa.me/8370079435?text=Hello%20,%20I%20want%20to%20know%20about%20%your%20studio%20and%20Pricing" target="_blank" rel="noopener noreferrer">
       <i className="fab fa-whatsapp"></i> Whatsapp
     </a>
     <a href="https://www.instagram.com/keshwamgraphics/" target="_blank" rel="noopener noreferrer">
