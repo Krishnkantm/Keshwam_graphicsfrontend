@@ -502,18 +502,42 @@ select:focus {
   margin-top:6px;
 }
 
-.order-btn{
-  background:#25D366;
-  color:white;
-  padding:6px 12px;
-  border-radius:6px;
-  text-decoration:none;
-  font-size:14px;
-  font-weight:500;
-  transition:0.3s;
+/* Base button style */
+.order-btn {
+  background: #25D366;
+  color: white;
+  padding: 8px 16px;          /* thoda bada for better tap targets on mobile */
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+  display: inline-block;       /* ensures proper spacing */
+  text-align: center;
+  cursor: pointer;
+  min-width: 100px;            /* optional: avoid very small buttons */
 }
 
-.order-btn:hover{
-  background:#1ebe5d;
+/* Hover / active state */
+.order-btn:hover,
+.order-btn:focus {
+  background: #1ebe5d;
+  outline: none;               /* remove focus outline */
 }
 
+/* Responsive: tablets */
+@media (max-width: 768px) {
+  .order-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+/* Responsive: mobile phones */
+@media (max-width: 480px) {
+  .order-btn {
+    width: 100%;              /* full width for easy tap */
+    padding: 12px 0;
+    font-size: 16px;
+  }
+}
