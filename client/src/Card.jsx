@@ -28,7 +28,19 @@ function Card({ it, setPreview }) {
 
       <div className="card-body">
         <div className="title">{it.title || it.originalName}</div>
-        <div className="price">₹ {it.price}</div>
+        {/* price + button row */}
+        <div className="price-row">
+          <div className="price">₹ {it.price}</div>
+
+          <a
+            href="https://wa.me/+918370079435?text=Hello%2C%20Sir"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="order-btn"
+          >
+            Order Now
+          </a>
+        </div>
         <div className="cat">{it.category}</div>
         <div className="date">
           {new Date(it.uploadedAt).toLocaleString()}
